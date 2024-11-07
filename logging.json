@@ -1,0 +1,2922 @@
+[
+  {
+    "insertId": "1r0274zdkn82",
+    "jsonPayload": {
+      "firstReportTime": "2024-09-25T10:37:41.338201837Z",
+      "reportGroups": [
+        "VPC_NETWORK"
+      ],
+      "resourceName": "//compute.googleapis.com/projects/drewlp1660",
+      "causeCode": "IP_UTILIZATION_IP_ALLOCATION_SUMMARY",
+      "status": "ACTIVE",
+      "@type": "type.googleapis.com/google.cloud.networkanalyzer.logging.v1.Report",
+      "id": "drewlp1660/ip_utilization/1417862446015977850",
+      "type": "INFO",
+      "priority": "LOW",
+      "location": "global",
+      "ipUtilizationInfo": {
+        "subnetIpUtilization": [
+          {
+            "allocationRatio": 0.00024437927663734115,
+            "subnetUri": "//compute.googleapis.com/projects/drewlp1660/regions/us-central1/subnetworks/default"
+          }
+        ]
+      }
+    },
+    "resource": {
+      "type": "networking.googleapis.com/Location",
+      "labels": {
+        "project_id": "drewlp1660",
+        "location": "global"
+      }
+    },
+    "timestamp": "2024-11-02T10:37:41.231962240Z",
+    "logName": "projects/drewlp1660/logs/networkanalyzer.googleapis.com%2Fanalyzer_reports",
+    "receiveTimestamp": "2024-11-02T10:37:42.832338485Z"
+  },
+  {
+    "insertId": "1qzhgdif1t2yh0",
+    "jsonPayload": {
+      "omitempty": null,
+      "localTimestamp": "2024-11-02T17:27:23.0006Z",
+      "message": "Scheduler - wake: [now 2024-11-02 17:27:23.000478304 +0000 UTC]"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "project_id": "drewlp1660",
+        "instance_id": "414375484283897998",
+        "zone": "us-central1-c"
+      }
+    },
+    "timestamp": "2024-11-02T17:27:23.000690062Z",
+    "severity": "INFO",
+    "labels": {
+      "instance_name": "p1vm"
+    },
+    "logName": "projects/drewlp1660/logs/GCEGuestAgent",
+    "sourceLocation": {
+      "file": "logger.go",
+      "line": "24",
+      "function": "github.com/GoogleCloudPlatform/guest-agent/google_guest_agent/scheduler.(*cronLogger).Info"
+    },
+    "receiveTimestamp": "2024-11-02T17:27:24.033507163Z"
+  },
+  {
+    "insertId": "1qzhgdif1t2yh1",
+    "jsonPayload": {
+      "message": "Scheduler - run: [now 2024-11-02 17:27:23.000478304 +0000 UTC entry 1 next 2024-11-03 17:27:23 +0000 UTC]",
+      "localTimestamp": "2024-11-02T17:27:23.0008Z",
+      "omitempty": null
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "zone": "us-central1-c",
+        "instance_id": "414375484283897998",
+        "project_id": "drewlp1660"
+      }
+    },
+    "timestamp": "2024-11-02T17:27:23.000834226Z",
+    "severity": "INFO",
+    "labels": {
+      "instance_name": "p1vm"
+    },
+    "logName": "projects/drewlp1660/logs/GCEGuestAgent",
+    "sourceLocation": {
+      "file": "logger.go",
+      "line": "24",
+      "function": "github.com/GoogleCloudPlatform/guest-agent/google_guest_agent/scheduler.(*cronLogger).Info"
+    },
+    "receiveTimestamp": "2024-11-02T17:27:24.033507163Z"
+  },
+  {
+    "insertId": "1qzhgdif1t2yh2",
+    "jsonPayload": {
+      "message": "Invoking job \"telemetryJobID\"",
+      "omitempty": null,
+      "localTimestamp": "2024-11-02T17:27:23.0008Z"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "project_id": "drewlp1660",
+        "instance_id": "414375484283897998",
+        "zone": "us-central1-c"
+      }
+    },
+    "timestamp": "2024-11-02T17:27:23.000877695Z",
+    "severity": "INFO",
+    "labels": {
+      "instance_name": "p1vm"
+    },
+    "logName": "projects/drewlp1660/logs/GCEGuestAgent",
+    "sourceLocation": {
+      "file": "scheduler.go",
+      "line": "72",
+      "function": "github.com/GoogleCloudPlatform/guest-agent/google_guest_agent/scheduler.(*Scheduler).ScheduleJob.(*Scheduler).getFunc.func1"
+    },
+    "receiveTimestamp": "2024-11-02T17:27:24.033507163Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "DrewLP1223@gmail.com",
+        "principalSubject": "user:DrewLP1223@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.155.246",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.iam.workload-identity-pools.create invocation-id/f7947acdd4d14c4299c4336e02b16d70 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T17:27:27.254395556Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool",
+      "authorizationInfo": [
+        {
+          "resource": "projects/drewlp1660/locations/global",
+          "permission": "iam.workloadIdentityPools.create",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/drewlp1660/locations/global",
+      "request": {
+        "@type": "type.googleapis.com/google.iam.v1.CreateWorkloadIdentityPoolRequest",
+        "workloadIdentityPoolId": "github",
+        "parent": "projects/drewlp1660/locations/global",
+        "workloadIdentityPool": {
+          "displayName": "GitHub Actions Pool",
+          "disabled": false
+        }
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "global"
+        ]
+      }
+    },
+    "insertId": "o5ewspddmda",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool",
+        "project_id": "drewlp1660",
+        "service": "iam.googleapis.com"
+      }
+    },
+    "timestamp": "2024-11-02T17:27:27.244862507Z",
+    "severity": "NOTICE",
+    "logName": "projects/drewlp1660/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "projects/542292153372/locations/global/workloadIdentityPools/github/operations/bigar76btg4qmefytdakoay000000000",
+      "producer": "iam.googleapis.com",
+      "first": true
+    },
+    "receiveTimestamp": "2024-11-02T17:27:28.539963745Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "DrewLP1223@gmail.com",
+        "principalSubject": "user:DrewLP1223@gmail.com"
+      },
+      "requestMetadata": {
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool",
+      "resourceName": "projects/drewlp1660/locations/global",
+      "response": {
+        "@type": "type.googleapis.com/google.longrunning.Operation",
+        "name": "projects/542292153372/locations/global/workloadIdentityPools/github/operations/bigar76btg4qmefytdakoay000000000"
+      }
+    },
+    "insertId": "-owxan3c1tm",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "iam.googleapis.com",
+        "project_id": "drewlp1660",
+        "method": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool"
+      }
+    },
+    "timestamp": "2024-11-02T17:27:27.889544Z",
+    "severity": "NOTICE",
+    "logName": "projects/drewlp1660/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "projects/542292153372/locations/global/workloadIdentityPools/github/operations/bigar76btg4qmefytdakoay000000000",
+      "producer": "iam.googleapis.com",
+      "last": true
+    },
+    "receiveTimestamp": "2024-11-02T17:27:28.545686341Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "DrewLP1223@gmail.com",
+        "principalSubject": "user:DrewLP1223@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.155.246",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.iam.workload-identity-pools.providers.create-oidc invocation-id/21db6d1b3f324f1eb37bd4bf574e520b environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T17:32:52.747855186Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPoolProvider",
+      "authorizationInfo": [
+        {
+          "resource": "projects/drewlp1660/locations/global/workloadIdentityPools/github",
+          "permission": "iam.workloadIdentityPoolProviders.create",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/drewlp1660/locations/global/workloadIdentityPools/github",
+      "request": {
+        "workloadIdentityPoolProviderId": "my-repo",
+        "parent": "projects/drewlp1660/locations/global/workloadIdentityPools/github",
+        "workloadIdentityPoolProvider": {
+          "attributeCondition": "assertion.repository_owner == 'drewlp22'",
+          "oidc": {
+            "issuerUri": "https://token.actions.githubusercontent.com"
+          },
+          "attributeMapping": {
+            "attribute.actor": "assertion.actor",
+            "attribute.repository": "assertion.repository",
+            "google.subject": "assertion.sub",
+            "attribute.repository_owner": "assertion.repository_owner"
+          },
+          "displayName": "My GitHub repo Provider",
+          "disabled": false
+        },
+        "@type": "type.googleapis.com/google.iam.v1.CreateWorkloadIdentityPoolProviderRequest"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "global"
+        ]
+      }
+    },
+    "insertId": "s1nzdlddhfl",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "iam.googleapis.com",
+        "method": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPoolProvider",
+        "project_id": "drewlp1660"
+      }
+    },
+    "timestamp": "2024-11-02T17:32:52.725508652Z",
+    "severity": "NOTICE",
+    "logName": "projects/drewlp1660/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "projects/542292153372/locations/global/workloadIdentityPools/github/providers/my-repo/operations/bifqrroetg4qmehavg7hy00000000000",
+      "producer": "iam.googleapis.com",
+      "first": true
+    },
+    "receiveTimestamp": "2024-11-02T17:32:53.386099487Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "DrewLP1223@gmail.com",
+        "principalSubject": "user:DrewLP1223@gmail.com"
+      },
+      "requestMetadata": {
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPoolProvider",
+      "resourceName": "projects/drewlp1660/locations/global/workloadIdentityPools/github",
+      "response": {
+        "@type": "type.googleapis.com/google.longrunning.Operation",
+        "name": "projects/542292153372/locations/global/workloadIdentityPools/github/providers/my-repo/operations/bifqrroetg4qmehavg7hy00000000000"
+      }
+    },
+    "insertId": "-9d8y1sbz1",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "drewlp1660",
+        "service": "iam.googleapis.com",
+        "method": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPoolProvider"
+      }
+    },
+    "timestamp": "2024-11-02T17:32:53.262138Z",
+    "severity": "NOTICE",
+    "logName": "projects/drewlp1660/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "projects/542292153372/locations/global/workloadIdentityPools/github/providers/my-repo/operations/bifqrroetg4qmehavg7hy00000000000",
+      "producer": "iam.googleapis.com",
+      "last": true
+    },
+    "receiveTimestamp": "2024-11-02T17:32:53.616174555Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "DrewLP1223@gmail.com",
+        "principalSubject": "user:DrewLP1223@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.155.246",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.secrets.add-iam-policy-binding invocation-id/275dd19168324691ad58a1b441661b43 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe)",
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "serviceusage.googleapis.com",
+      "methodName": "google.api.serviceusage.v1.ServiceUsage.EnableService",
+      "authorizationInfo": [
+        {
+          "resource": "projectnumbers/542292153372/services/secretmanager.googleapis.com",
+          "permission": "serviceusage.services.enable",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        },
+        {
+          "resource": "services/secretmanager.googleapis.com",
+          "permission": "servicemanagement.services.bind",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "DATA_WRITE"
+        }
+      ],
+      "resourceName": "projects/drewlp1660/services/secretmanager.googleapis.com",
+      "request": {
+        "name": "projects/drewlp1660/services/secretmanager.googleapis.com",
+        "@type": "type.googleapis.com/google.api.serviceusage.v1.EnableServiceRequest"
+      }
+    },
+    "insertId": "970af1di2yh",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "drewlp1660",
+        "method": "google.api.serviceusage.v1.ServiceUsage.EnableService",
+        "service": "serviceusage.googleapis.com"
+      }
+    },
+    "timestamp": "2024-11-02T17:45:57.970291Z",
+    "severity": "NOTICE",
+    "logName": "projects/drewlp1660/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "operations/acat.p2-542292153372-b23e80db-e52b-4e12-ac87-de1703dc27f0",
+      "producer": "serviceusage.googleapis.com",
+      "first": true
+    },
+    "receiveTimestamp": "2024-11-02T17:45:59.538505701Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {},
+      "authenticationInfo": {
+        "principalEmail": "DrewLP1223@gmail.com",
+        "principalSubject": "user:DrewLP1223@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.155.246",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.secrets.add-iam-policy-binding invocation-id/275dd19168324691ad58a1b441661b43 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe)",
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "serviceusage.googleapis.com",
+      "methodName": "google.longrunning.Operations.GetOperation",
+      "authorizationInfo": [
+        {
+          "resource": "projectnumbers/542292153372",
+          "permission": "serviceusage.services.enable",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        },
+        {
+          "resource": "projectnumbers/542292153372/operations/-",
+          "permission": "serviceusage.operations.get",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "DATA_READ"
+        },
+        {
+          "resource": "projectnumbers/542292153372",
+          "permission": "serviceusage.services.get",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "DATA_READ"
+        }
+      ],
+      "resourceName": "projects/542292153372/operations/acat.p2-542292153372-b23e80db-e52b-4e12-ac87-de1703dc27f0"
+    },
+    "insertId": "1mv5b9edkafl",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "drewlp1660",
+        "method": "google.longrunning.Operations.GetOperation",
+        "service": "serviceusage.googleapis.com"
+      }
+    },
+    "timestamp": "2024-11-02T17:45:58.591566Z",
+    "severity": "NOTICE",
+    "logName": "projects/drewlp1660/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T17:45:59.238330120Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {},
+      "authenticationInfo": {
+        "principalEmail": "DrewLP1223@gmail.com",
+        "principalSubject": "user:DrewLP1223@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.155.246",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.secrets.add-iam-policy-binding invocation-id/275dd19168324691ad58a1b441661b43 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe)",
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "serviceusage.googleapis.com",
+      "methodName": "google.api.serviceusage.v1.ServiceUsage.EnableService",
+      "authorizationInfo": [
+        {
+          "resource": "projectnumbers/542292153372/services/secretmanager.googleapis.com",
+          "permission": "serviceusage.services.enable",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        },
+        {
+          "resource": "services/secretmanager.googleapis.com",
+          "permission": "servicemanagement.services.bind",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "DATA_WRITE"
+        }
+      ],
+      "resourceName": "projects/drewlp1660/services/secretmanager.googleapis.com",
+      "request": {
+        "name": "projects/drewlp1660/services/secretmanager.googleapis.com",
+        "@type": "type.googleapis.com/google.api.serviceusage.v1.EnableServiceRequest"
+      },
+      "response": {
+        "@type": "type.googleapis.com/google.api.serviceusage.v1.EnableServiceResponse",
+        "service": {
+          "state": "ENABLED",
+          "name": "projects/542292153372/services/secretmanager.googleapis.com",
+          "parent": "projects/542292153372",
+          "config": {
+            "title": "Secret Manager API",
+            "name": "secretmanager.googleapis.com"
+          }
+        }
+      }
+    },
+    "insertId": "8wtjhpd9ixe",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.api.serviceusage.v1.ServiceUsage.EnableService",
+        "project_id": "drewlp1660",
+        "service": "serviceusage.googleapis.com"
+      }
+    },
+    "timestamp": "2024-11-02T17:46:00.215554587Z",
+    "severity": "NOTICE",
+    "logName": "projects/drewlp1660/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "operations/acat.p2-542292153372-b23e80db-e52b-4e12-ac87-de1703dc27f0",
+      "producer": "serviceusage.googleapis.com",
+      "last": true
+    },
+    "receiveTimestamp": "2024-11-02T17:46:00.215554587Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {},
+      "authenticationInfo": {
+        "principalEmail": "DrewLP1223@gmail.com",
+        "principalSubject": "user:DrewLP1223@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.155.246",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.secrets.add-iam-policy-binding invocation-id/275dd19168324691ad58a1b441661b43 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe)",
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "serviceusage.googleapis.com",
+      "methodName": "google.longrunning.Operations.GetOperation",
+      "authorizationInfo": [
+        {
+          "resource": "projectnumbers/542292153372",
+          "permission": "serviceusage.services.enable",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        },
+        {
+          "resource": "projectnumbers/542292153372/operations/-",
+          "permission": "serviceusage.operations.get",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "DATA_READ"
+        },
+        {
+          "resource": "projectnumbers/542292153372",
+          "permission": "serviceusage.services.get",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "DATA_READ"
+        }
+      ],
+      "resourceName": "projects/542292153372/operations/acat.p2-542292153372-b23e80db-e52b-4e12-ac87-de1703dc27f0"
+    },
+    "insertId": "9gcz8xdkwga",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "drewlp1660",
+        "method": "google.longrunning.Operations.GetOperation",
+        "service": "serviceusage.googleapis.com"
+      }
+    },
+    "timestamp": "2024-11-02T17:46:01.563698Z",
+    "severity": "NOTICE",
+    "logName": "projects/drewlp1660/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T17:46:02.542242735Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "The member principalSet://iam.googleapis.com//attribute.repository/pitt-cs-1660/build-and-push-image-drewlp22 is of an unknown type. Please set a valid type prefix for the member."
+      },
+      "authenticationInfo": {
+        "principalEmail": "DrewLP1223@gmail.com",
+        "principalSubject": "user:DrewLP1223@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.155.246",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.artifacts.repositories.add-iam-policy-binding invocation-id/959751f6b7d14f869f1ee692e77d5d91 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T18:24:12.880976967Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "projects/drewlp1660/locations/us-east5/repositories/dlp1660a3",
+          "permission": "artifactregistry.repositories.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/drewlp1660/locations/us-east5/repositories/dlp1660a3",
+      "request": {
+        "resource": "projects/drewlp1660/locations/us-east5/repositories/dlp1660a3",
+        "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest"
+      }
+    },
+    "insertId": "j6ffccd3oq5",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "artifactregistry.googleapis.com",
+        "project_id": "drewlp1660",
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy"
+      }
+    },
+    "timestamp": "2024-11-02T18:24:12.871635738Z",
+    "severity": "ERROR",
+    "logName": "projects/drewlp1660/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T18:24:13.058606023Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Invalid principalSet member (principalSet://iam.googleapis.com/projects/542292153372/locations/global/workloadIdentityPools/github/providers/my-repo/attribute.repository/pitt-cs-1660/build-and-push-image-drewlp22)."
+      },
+      "authenticationInfo": {
+        "principalEmail": "DrewLP1223@gmail.com",
+        "principalSubject": "user:DrewLP1223@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.155.246",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.artifacts.repositories.add-iam-policy-binding invocation-id/f3e3d860478a4fe4b5b949b5f40c5318 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T18:28:12.647719708Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "projects/drewlp1660/locations/us-east5/repositories/dlp1660a3",
+          "permission": "artifactregistry.repositories.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/drewlp1660/locations/us-east5/repositories/dlp1660a3",
+      "request": {
+        "resource": "projects/drewlp1660/locations/us-east5/repositories/dlp1660a3",
+        "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest"
+      }
+    },
+    "insertId": "im94yod3pux",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "artifactregistry.googleapis.com",
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+        "project_id": "drewlp1660"
+      }
+    },
+    "timestamp": "2024-11-02T18:28:12.641882709Z",
+    "severity": "ERROR",
+    "logName": "projects/drewlp1660/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T18:28:13.697621192Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Invalid principalSet member (principalSet://iam.googleapis.com/projects/542292153372/locations/global/workloadIdentityPools/github/providers/my-repo/attribute.repository/pitt-cs-1660/build-and-push-image-drewlp22)."
+      },
+      "authenticationInfo": {
+        "principalEmail": "DrewLP1223@gmail.com",
+        "principalSubject": "user:DrewLP1223@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.155.246",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.artifacts.repositories.add-iam-policy-binding invocation-id/8688ba21156743b4a890a75d96579fa6 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T18:36:15.261161871Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "projects/drewlp1660/locations/us-east5/repositories/dlp1660a3",
+          "permission": "artifactregistry.repositories.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/drewlp1660/locations/us-east5/repositories/dlp1660a3",
+      "request": {
+        "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest",
+        "resource": "projects/drewlp1660/locations/us-east5/repositories/dlp1660a3"
+      }
+    },
+    "insertId": "ilooxud3uqf",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+        "service": "artifactregistry.googleapis.com",
+        "project_id": "drewlp1660"
+      }
+    },
+    "timestamp": "2024-11-02T18:36:15.255650422Z",
+    "severity": "ERROR",
+    "logName": "projects/drewlp1660/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T18:36:15.350792694Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {},
+      "authenticationInfo": {
+        "principalEmail": "DrewLP1223@gmail.com",
+        "principalSubject": "user:DrewLP1223@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.155.246",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.iam.service-accounts.create invocation-id/d82b498401184488830ede5569513da2 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T18:45:01.711091604Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.admin.v1.CreateServiceAccount",
+      "authorizationInfo": [
+        {
+          "resource": "projects/drewlp1660",
+          "permission": "iam.serviceAccounts.create",
+          "granted": true,
+          "resourceAttributes": {
+            "type": "iam.googleapis.com/ServiceAccount"
+          },
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/drewlp1660",
+      "request": {
+        "@type": "type.googleapis.com/google.iam.admin.v1.CreateServiceAccountRequest",
+        "service_account": {
+          "description": "Assignment 3 service account",
+          "display_name": "GitHub Actions service account."
+        },
+        "account_id": "github-actions-service-account",
+        "name": "projects/drewlp1660"
+      },
+      "response": {
+        "email": "github-actions-service-account@drewlp1660.iam.gserviceaccount.com",
+        "description": "Assignment 3 service account",
+        "display_name": "GitHub Actions service account.",
+        "project_id": "drewlp1660",
+        "name": "projects/drewlp1660/serviceAccounts/github-actions-service-account@drewlp1660.iam.gserviceaccount.com",
+        "unique_id": "111730399585484452141",
+        "etag": "MDEwMjE5MjA=",
+        "oauth2_client_id": "111730399585484452141",
+        "@type": "type.googleapis.com/google.iam.admin.v1.ServiceAccount"
+      }
+    },
+    "insertId": "tfnllfe2qeul",
+    "resource": {
+      "type": "service_account",
+      "labels": {
+        "email_id": "github-actions-service-account@drewlp1660.iam.gserviceaccount.com",
+        "project_id": "drewlp1660",
+        "unique_id": "111730399585484452141"
+      }
+    },
+    "timestamp": "2024-11-02T18:45:01.691535236Z",
+    "severity": "NOTICE",
+    "logName": "projects/drewlp1660/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T18:45:03.067343036Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "DrewLP1223@gmail.com",
+        "principalSubject": "user:DrewLP1223@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "174.181.6.153",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:131.0) Gecko/20100101 Firefox/131.0,gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T19:48:12.437483125Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.UpdateWorkloadIdentityPoolProvider",
+      "authorizationInfo": [
+        {
+          "resource": "projects/drewlp1660/locations/global/workloadIdentityPools/github/providers/my-repo",
+          "permission": "iam.workloadIdentityPoolProviders.update",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/drewlp1660/locations/global/workloadIdentityPools/github/providers/my-repo",
+      "request": {
+        "@type": "type.googleapis.com/google.iam.v1.UpdateWorkloadIdentityPoolProviderRequest",
+        "workloadIdentityPoolProvider": {
+          "attributeMapping": {
+            "attribute.repository": "assertion.repository",
+            "attribute.actor": "assertion.actor",
+            "google.subject": "assertion.sub",
+            "attribute.repository_owner": "assertion.repository_owner"
+          },
+          "disabled": false,
+          "oidc": {
+            "issuerUri": "https://token.actions.githubusercontent.com"
+          },
+          "attributeCondition": "assertion.repository_owner == 'pitt-cs-1660'",
+          "name": "projects/drewlp1660/locations/global/workloadIdentityPools/github/providers/my-repo",
+          "displayName": "My GitHub repo Provider"
+        },
+        "updateMask": "displayName,disabled,attributeMapping,attributeCondition,oidc.issuerUri,oidc.allowedAudiences,oidc.jwksJson"
+      }
+    },
+    "insertId": "1y90j3pdh7iq",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "drewlp1660",
+        "method": "google.iam.v1.WorkloadIdentityPools.UpdateWorkloadIdentityPoolProvider",
+        "service": "iam.googleapis.com"
+      }
+    },
+    "timestamp": "2024-11-02T19:48:12.419756036Z",
+    "severity": "NOTICE",
+    "logName": "projects/drewlp1660/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "projects/542292153372/locations/global/workloadIdentityPools/github/providers/my-repo/operations/bigar7edtk4qmegisof3oaq000000000",
+      "producer": "iam.googleapis.com",
+      "first": true
+    },
+    "receiveTimestamp": "2024-11-02T19:48:13.154890414Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "DrewLP1223@gmail.com",
+        "principalSubject": "user:DrewLP1223@gmail.com"
+      },
+      "requestMetadata": {
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.UpdateWorkloadIdentityPoolProvider",
+      "resourceName": "projects/drewlp1660/locations/global/workloadIdentityPools/github/providers/my-repo",
+      "response": {
+        "@type": "type.googleapis.com/google.longrunning.Operation",
+        "name": "projects/542292153372/locations/global/workloadIdentityPools/github/providers/my-repo/operations/bigar7edtk4qmegisof3oaq000000000"
+      }
+    },
+    "insertId": "2ieh02c9uw",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "iam.googleapis.com",
+        "project_id": "drewlp1660",
+        "method": "google.iam.v1.WorkloadIdentityPools.UpdateWorkloadIdentityPoolProvider"
+      }
+    },
+    "timestamp": "2024-11-02T19:48:12.653500Z",
+    "severity": "NOTICE",
+    "logName": "projects/drewlp1660/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "projects/542292153372/locations/global/workloadIdentityPools/github/providers/my-repo/operations/bigar7edtk4qmegisof3oaq000000000",
+      "producer": "iam.googleapis.com",
+      "last": true
+    },
+    "receiveTimestamp": "2024-11-02T19:48:12.908976618Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Invalid principalSet member (principalSet://iam.googleapis.com/projects/542292153372/locations/global/workloadIdentityPools/github/providers/my-repo/attribute.repository/pitt-cs-1660/build-and-push-image-drewlp22)."
+      },
+      "authenticationInfo": {
+        "principalEmail": "DrewLP1223@gmail.com",
+        "principalSubject": "user:DrewLP1223@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.155.246",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.artifacts.repositories.add-iam-policy-binding invocation-id/d04877d333bb4c04a820f8ed54423ee6 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T20:19:23.338636538Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "projects/drewlp1660/locations/us-east5/repositories/dlp1660a3",
+          "permission": "artifactregistry.repositories.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/drewlp1660/locations/us-east5/repositories/dlp1660a3",
+      "request": {
+        "resource": "projects/drewlp1660/locations/us-east5/repositories/dlp1660a3",
+        "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest"
+      }
+    },
+    "insertId": "j5rxthd3rga",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "artifactregistry.googleapis.com",
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+        "project_id": "drewlp1660"
+      }
+    },
+    "timestamp": "2024-11-02T20:19:23.328141569Z",
+    "severity": "ERROR",
+    "logName": "projects/drewlp1660/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T20:19:24.254528814Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {},
+      "authenticationInfo": {
+        "principalEmail": "drewlp1223@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "174.181.6.153",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:131.0) Gecko/20100101 Firefox/131.0,gzip(gfe),gzip(gfe)",
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "cloudresourcemanager.googleapis.com",
+      "methodName": "SetIamPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "projects/drewlp1660",
+          "permission": "resourcemanager.projects.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "cloudresourcemanager.googleapis.com",
+            "name": "projects/drewlp1660",
+            "type": "cloudresourcemanager.googleapis.com/Project"
+          },
+          "permissionType": "ADMIN_WRITE"
+        },
+        {
+          "resource": "projects/drewlp1660",
+          "permission": "resourcemanager.projects.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "cloudresourcemanager.googleapis.com",
+            "name": "projects/drewlp1660",
+            "type": "cloudresourcemanager.googleapis.com/Project"
+          },
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/drewlp1660",
+      "serviceData": {
+        "@type": "type.googleapis.com/google.iam.v1.logging.AuditData",
+        "policyDelta": {
+          "bindingDeltas": [
+            {
+              "action": "ADD",
+              "role": "roles/artifactregistry.admin",
+              "member": "serviceAccount:542292153372-compute@developer.gserviceaccount.com"
+            },
+            {
+              "action": "REMOVE",
+              "role": "roles/editor",
+              "member": "serviceAccount:542292153372-compute@developer.gserviceaccount.com"
+            }
+          ]
+        }
+      },
+      "request": {
+        "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest",
+        "resource": "drewlp1660",
+        "policy": {
+          "bindings": [
+            {
+              "members": [
+                "serviceAccount:service-542292153372@gcp-sa-artifactregistry.iam.gserviceaccount.com"
+              ],
+              "role": "roles/artifactregistry.serviceAgent"
+            },
+            {
+              "members": [
+                "serviceAccount:service-542292153372@compute-system.iam.gserviceaccount.com"
+              ],
+              "role": "roles/compute.serviceAgent"
+            },
+            {
+              "members": [
+                "serviceAccount:542292153372@cloudservices.gserviceaccount.com"
+              ],
+              "role": "roles/editor"
+            },
+            {
+              "role": "roles/owner",
+              "members": [
+                "user:DrewLP1223@gmail.com",
+                "user:alp242@pitt.edu"
+              ]
+            },
+            {
+              "members": [
+                "serviceAccount:542292153372-compute@developer.gserviceaccount.com"
+              ],
+              "role": "roles/artifactregistry.admin"
+            }
+          ],
+          "etag": "BwYlooLe5G0="
+        }
+      },
+      "response": {
+        "@type": "type.googleapis.com/google.iam.v1.Policy",
+        "etag": "BwYl8/ux7Yw=",
+        "bindings": [
+          {
+            "members": [
+              "serviceAccount:542292153372-compute@developer.gserviceaccount.com"
+            ],
+            "role": "roles/artifactregistry.admin"
+          },
+          {
+            "members": [
+              "serviceAccount:service-542292153372@gcp-sa-artifactregistry.iam.gserviceaccount.com"
+            ],
+            "role": "roles/artifactregistry.serviceAgent"
+          },
+          {
+            "members": [
+              "serviceAccount:service-542292153372@compute-system.iam.gserviceaccount.com"
+            ],
+            "role": "roles/compute.serviceAgent"
+          },
+          {
+            "members": [
+              "serviceAccount:542292153372@cloudservices.gserviceaccount.com"
+            ],
+            "role": "roles/editor"
+          },
+          {
+            "members": [
+              "user:DrewLP1223@gmail.com",
+              "user:alp242@pitt.edu"
+            ],
+            "role": "roles/owner"
+          }
+        ]
+      }
+    },
+    "insertId": "-qw0hjse3tlpw",
+    "resource": {
+      "type": "project",
+      "labels": {
+        "project_id": "drewlp1660"
+      }
+    },
+    "timestamp": "2024-11-02T20:34:49.247324Z",
+    "severity": "NOTICE",
+    "logName": "projects/drewlp1660/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T20:34:51.195753275Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {},
+      "authenticationInfo": {
+        "principalEmail": "drewlp1223@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "174.181.6.153",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:131.0) Gecko/20100101 Firefox/131.0,gzip(gfe),gzip(gfe)",
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "cloudresourcemanager.googleapis.com",
+      "methodName": "SetIamPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "projects/drewlp1660",
+          "permission": "resourcemanager.projects.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "cloudresourcemanager.googleapis.com",
+            "name": "projects/drewlp1660",
+            "type": "cloudresourcemanager.googleapis.com/Project"
+          },
+          "permissionType": "ADMIN_WRITE"
+        },
+        {
+          "resource": "projects/drewlp1660",
+          "permission": "resourcemanager.projects.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "cloudresourcemanager.googleapis.com",
+            "name": "projects/drewlp1660",
+            "type": "cloudresourcemanager.googleapis.com/Project"
+          },
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/drewlp1660",
+      "serviceData": {
+        "@type": "type.googleapis.com/google.iam.v1.logging.AuditData",
+        "policyDelta": {
+          "bindingDeltas": [
+            {
+              "action": "REMOVE",
+              "role": "roles/artifactregistry.admin",
+              "member": "serviceAccount:542292153372-compute@developer.gserviceaccount.com"
+            },
+            {
+              "action": "ADD",
+              "role": "roles/owner",
+              "member": "serviceAccount:542292153372-compute@developer.gserviceaccount.com"
+            }
+          ]
+        }
+      },
+      "request": {
+        "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest",
+        "resource": "drewlp1660",
+        "policy": {
+          "bindings": [
+            {
+              "members": [
+                "serviceAccount:service-542292153372@gcp-sa-artifactregistry.iam.gserviceaccount.com"
+              ],
+              "role": "roles/artifactregistry.serviceAgent"
+            },
+            {
+              "members": [
+                "serviceAccount:service-542292153372@compute-system.iam.gserviceaccount.com"
+              ],
+              "role": "roles/compute.serviceAgent"
+            },
+            {
+              "members": [
+                "serviceAccount:542292153372@cloudservices.gserviceaccount.com"
+              ],
+              "role": "roles/editor"
+            },
+            {
+              "members": [
+                "user:DrewLP1223@gmail.com",
+                "user:alp242@pitt.edu",
+                "serviceAccount:542292153372-compute@developer.gserviceaccount.com"
+              ],
+              "role": "roles/owner"
+            }
+          ],
+          "etag": "BwYl8/ux7Yw="
+        }
+      },
+      "response": {
+        "etag": "BwYl9APJGeg=",
+        "@type": "type.googleapis.com/google.iam.v1.Policy",
+        "bindings": [
+          {
+            "members": [
+              "serviceAccount:service-542292153372@gcp-sa-artifactregistry.iam.gserviceaccount.com"
+            ],
+            "role": "roles/artifactregistry.serviceAgent"
+          },
+          {
+            "role": "roles/compute.serviceAgent",
+            "members": [
+              "serviceAccount:service-542292153372@compute-system.iam.gserviceaccount.com"
+            ]
+          },
+          {
+            "members": [
+              "serviceAccount:542292153372@cloudservices.gserviceaccount.com"
+            ],
+            "role": "roles/editor"
+          },
+          {
+            "members": [
+              "serviceAccount:542292153372-compute@developer.gserviceaccount.com",
+              "user:DrewLP1223@gmail.com",
+              "user:alp242@pitt.edu"
+            ],
+            "role": "roles/owner"
+          }
+        ]
+      }
+    },
+    "insertId": "-aibcjse3ysxc",
+    "resource": {
+      "type": "project",
+      "labels": {
+        "project_id": "drewlp1660"
+      }
+    },
+    "timestamp": "2024-11-02T20:37:05.051355Z",
+    "severity": "NOTICE",
+    "logName": "projects/drewlp1660/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T20:37:06.926341574Z"
+  },
+  {
+    "insertId": "-woexw8d1g2w",
+    "jsonPayload": {
+      "affectedResources": [
+        "//cloudresourcemanager.googleapis.com/projects/542292153372"
+      ],
+      "sourceLogIds": [
+        {
+          "queryUri": "https://console.cloud.google.com/logs/query;query=timestamp%3D%222024-11-02T20:37:05.051355Z%22%0AinsertId%3D%22-aibcjse3ysxc%22?project=drewlp1660",
+          "insertId": "-aibcjse3ysxc",
+          "resourceContainer": "projects/drewlp1660",
+          "logTime": "2024-11-02T20:37:05.051355Z"
+        }
+      ],
+      "access": {
+        "methodName": "SetIamPolicy",
+        "callerIp": "174.181.6.153",
+        "serviceName": "cloudresourcemanager.googleapis.com",
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:131.0) Gecko/20100101 Firefox/131.0,gzip(gfe),gzip(gfe)",
+        "principalEmail": "drewlp1223@gmail.com",
+        "callerIpGeo": {
+          "regionCode": "US"
+        }
+      },
+      "actionType": "add_sensitive_role",
+      "actionTime": "2024-11-02T20:37:10.983379Z",
+      "learnMoreUri": "https://cloud.google.com/security-command-center/docs/concepts-sensitive-actions-overview"
+    },
+    "resource": {
+      "type": "sensitiveaction.googleapis.com/Location",
+      "labels": {
+        "resource_container": "//cloudresourcemanager.googleapis.com/projects/542292153372",
+        "location": "global"
+      }
+    },
+    "timestamp": "2024-11-02T20:37:10.983379Z",
+    "severity": "NOTICE",
+    "logName": "projects/drewlp1660/logs/sensitiveaction.googleapis.com%2Faction",
+    "receiveTimestamp": "2024-11-02T20:37:13.606116912Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Invalid principalSet member (principalSet://iam.googleapis.com/projects/542292153372/locations/global/workloadIdentityPools/github/providers/my-repo/attribute.repository/pitt-cs-1660/build-and-push-image-drewlp22)."
+      },
+      "authenticationInfo": {
+        "principalEmail": "DrewLP1223@gmail.com",
+        "principalSubject": "user:DrewLP1223@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.237.155.246",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.artifacts.repositories.add-iam-policy-binding invocation-id/97fcc9d747f546d0ac926667c3854b3a environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T21:06:17.380296697Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "projects/drewlp1660/locations/us-east5/repositories/dlp1660a3",
+          "permission": "artifactregistry.repositories.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/drewlp1660/locations/us-east5/repositories/dlp1660a3",
+      "request": {
+        "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest",
+        "resource": "projects/drewlp1660/locations/us-east5/repositories/dlp1660a3"
+      }
+    },
+    "insertId": "ilooxud3wfu",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "artifactregistry.googleapis.com",
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+        "project_id": "drewlp1660"
+      }
+    },
+    "timestamp": "2024-11-02T21:06:17.373131686Z",
+    "severity": "ERROR",
+    "logName": "projects/drewlp1660/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T21:06:18.300807874Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Invalid attribute condition. [ERROR 'ERROR: <expression>:1:31: undeclared reference to 'pitt' (in container '')\n | assertion.repository_owner == pitt-cs-1660\n | ..............................^' at 30, ERROR 'ERROR: <expression>:1:36: undeclared reference to 'cs' (in container '')\n | assertion.repository_owner == pitt-cs-1660\n | ...................................^' at 35]"
+      },
+      "authenticationInfo": {
+        "principalEmail": "DrewLP1223@gmail.com",
+        "principalSubject": "user:DrewLP1223@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "174.181.6.153",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:131.0) Gecko/20100101 Firefox/131.0,gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-02T21:08:57.270641984Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.UpdateWorkloadIdentityPoolProvider",
+      "authorizationInfo": [
+        {
+          "resource": "projects/drewlp1660/locations/global/workloadIdentityPools/github/providers/my-repo",
+          "permission": "iam.workloadIdentityPoolProviders.update",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/drewlp1660/locations/global/workloadIdentityPools/github/providers/my-repo",
+      "request": {
+        "updateMask": "displayName,disabled,attributeMapping,attributeCondition,oidc.issuerUri,oidc.allowedAudiences,oidc.jwksJson",
+        "@type": "type.googleapis.com/google.iam.v1.UpdateWorkloadIdentityPoolProviderRequest",
+        "workloadIdentityPoolProvider": {
+          "attributeMapping": {
+            "attribute.repository": "assertion.repository",
+            "attribute.repository_owner": "assertion.repository_owner",
+            "attribute.actor": "assertion.actor",
+            "google.subject": "assertion.sub"
+          },
+          "disabled": false,
+          "oidc": {
+            "issuerUri": "https://token.actions.githubusercontent.com"
+          },
+          "displayName": "My GitHub repo Provider",
+          "attributeCondition": "assertion.repository_owner == pitt-cs-1660",
+          "name": "projects/drewlp1660/locations/global/workloadIdentityPools/github/providers/my-repo"
+        }
+      }
+    },
+    "insertId": "zu0e39de49z",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "iam.googleapis.com",
+        "method": "google.iam.v1.WorkloadIdentityPools.UpdateWorkloadIdentityPoolProvider",
+        "project_id": "drewlp1660"
+      }
+    },
+    "timestamp": "2024-11-02T21:08:57.252061333Z",
+    "severity": "ERROR",
+    "logName": "projects/drewlp1660/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T21:08:58.109244350Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "drewlp1223@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "174.181.6.153",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:131.0) Gecko/20100101 Firefox/131.0,gzip(gfe),gzip(gfe)",
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "serviceusage.googleapis.com",
+      "methodName": "google.api.serviceusage.v1.ServiceUsage.EnableService",
+      "authorizationInfo": [
+        {
+          "resource": "projectnumbers/542292153372/services/privilegedaccessmanager.googleapis.com",
+          "permission": "serviceusage.services.enable",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        },
+        {
+          "resource": "services/privilegedaccessmanager.googleapis.com",
+          "permission": "servicemanagement.services.bind",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "DATA_WRITE"
+        }
+      ],
+      "resourceName": "projects/drewlp1660/services/privilegedaccessmanager.googleapis.com",
+      "request": {
+        "@type": "type.googleapis.com/google.api.serviceusage.v1.EnableServiceRequest",
+        "name": "projects/drewlp1660/services/privilegedaccessmanager.googleapis.com"
+      }
+    },
+    "insertId": "16qx9pcdb21i",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.api.serviceusage.v1.ServiceUsage.EnableService",
+        "service": "serviceusage.googleapis.com",
+        "project_id": "drewlp1660"
+      }
+    },
+    "timestamp": "2024-11-02T21:16:41.315840Z",
+    "severity": "NOTICE",
+    "logName": "projects/drewlp1660/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "operations/acat.p2-542292153372-25c547c5-d8bc-4984-b787-20f2ee04021e",
+      "producer": "serviceusage.googleapis.com",
+      "first": true
+    },
+    "receiveTimestamp": "2024-11-02T21:16:42.010096404Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {},
+      "authenticationInfo": {
+        "principalEmail": "drewlp1223@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "174.181.6.153",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:131.0) Gecko/20100101 Firefox/131.0,gzip(gfe),gzip(gfe)",
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "serviceusage.googleapis.com",
+      "methodName": "google.longrunning.Operations.GetOperation",
+      "authorizationInfo": [
+        {
+          "resource": "projectnumbers/542292153372",
+          "permission": "serviceusage.services.enable",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        },
+        {
+          "resource": "projectnumbers/542292153372/operations/-",
+          "permission": "serviceusage.operations.get",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "DATA_READ"
+        },
+        {
+          "resource": "projectnumbers/542292153372",
+          "permission": "serviceusage.services.get",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "DATA_READ"
+        }
+      ],
+      "resourceName": "projects/542292153372/operations/acat.p2-542292153372-25c547c5-d8bc-4984-b787-20f2ee04021e"
+    },
+    "insertId": "9gcz8xdll3d",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.longrunning.Operations.GetOperation",
+        "project_id": "drewlp1660",
+        "service": "serviceusage.googleapis.com"
+      }
+    },
+    "timestamp": "2024-11-02T21:16:41.939068Z",
+    "severity": "NOTICE",
+    "logName": "projects/drewlp1660/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T21:16:42.534276789Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {},
+      "authenticationInfo": {
+        "principalEmail": "drewlp1223@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "174.181.6.153",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:131.0) Gecko/20100101 Firefox/131.0,gzip(gfe),gzip(gfe)"
+      },
+      "serviceName": "serviceusage.googleapis.com",
+      "methodName": "google.api.serviceusage.v1.ServiceUsage.EnableService",
+      "authorizationInfo": [
+        {
+          "resource": "projectnumbers/542292153372/services/privilegedaccessmanager.googleapis.com",
+          "permission": "serviceusage.services.enable",
+          "granted": true,
+          "permissionType": "ADMIN_WRITE"
+        },
+        {
+          "resource": "services/privilegedaccessmanager.googleapis.com",
+          "permission": "servicemanagement.services.bind",
+          "granted": true,
+          "permissionType": "DATA_WRITE"
+        }
+      ],
+      "resourceName": "projects/drewlp1660/services/privilegedaccessmanager.googleapis.com",
+      "request": {
+        "name": "projects/drewlp1660/services/privilegedaccessmanager.googleapis.com",
+        "@type": "type.googleapis.com/google.api.serviceusage.v1.EnableServiceRequest"
+      },
+      "response": {
+        "service": {
+          "name": "projects/542292153372/services/privilegedaccessmanager.googleapis.com",
+          "config": {
+            "name": "privilegedaccessmanager.googleapis.com",
+            "title": "Privileged Access Manager API"
+          },
+          "state": "ENABLED",
+          "parent": "projects/542292153372"
+        },
+        "@type": "type.googleapis.com/google.api.serviceusage.v1.EnableServiceResponse"
+      }
+    },
+    "insertId": "8wtjhpdabmu",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "serviceusage.googleapis.com",
+        "method": "google.api.serviceusage.v1.ServiceUsage.EnableService",
+        "project_id": "drewlp1660"
+      }
+    },
+    "timestamp": "2024-11-02T21:16:43.822134101Z",
+    "severity": "NOTICE",
+    "logName": "projects/drewlp1660/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "operations/acat.p2-542292153372-25c547c5-d8bc-4984-b787-20f2ee04021e",
+      "producer": "serviceusage.googleapis.com",
+      "last": true
+    },
+    "receiveTimestamp": "2024-11-02T21:16:43.822134101Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {},
+      "authenticationInfo": {
+        "principalEmail": "drewlp1223@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "174.181.6.153",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:131.0) Gecko/20100101 Firefox/131.0,gzip(gfe),gzip(gfe)",
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "serviceusage.googleapis.com",
+      "methodName": "google.longrunning.Operations.GetOperation",
+      "authorizationInfo": [
+        {
+          "resource": "projectnumbers/542292153372",
+          "permission": "serviceusage.services.enable",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        },
+        {
+          "resource": "projectnumbers/542292153372/operations/-",
+          "permission": "serviceusage.operations.get",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "DATA_READ"
+        },
+        {
+          "resource": "projectnumbers/542292153372",
+          "permission": "serviceusage.services.get",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "DATA_READ"
+        }
+      ],
+      "resourceName": "projects/542292153372/operations/acat.p2-542292153372-25c547c5-d8bc-4984-b787-20f2ee04021e"
+    },
+    "insertId": "kezl2dm175",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "drewlp1660",
+        "service": "serviceusage.googleapis.com",
+        "method": "google.longrunning.Operations.GetOperation"
+      }
+    },
+    "timestamp": "2024-11-02T21:16:45.194490Z",
+    "severity": "NOTICE",
+    "logName": "projects/drewlp1660/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-02T21:16:45.987902011Z"
+  },
+  {
+    "insertId": "1r0274zdxk7g",
+    "jsonPayload": {
+      "resourceName": "//compute.googleapis.com/projects/drewlp1660",
+      "priority": "LOW",
+      "reportGroups": [
+        "VPC_NETWORK"
+      ],
+      "location": "global",
+      "@type": "type.googleapis.com/google.cloud.networkanalyzer.logging.v1.Report",
+      "status": "ACTIVE",
+      "firstReportTime": "2024-09-25T10:37:41.338201837Z",
+      "causeCode": "IP_UTILIZATION_IP_ALLOCATION_SUMMARY",
+      "ipUtilizationInfo": {
+        "subnetIpUtilization": [
+          {
+            "subnetUri": "//compute.googleapis.com/projects/drewlp1660/regions/us-central1/subnetworks/default",
+            "allocationRatio": 0.00024437927663734115
+          }
+        ]
+      },
+      "id": "drewlp1660/ip_utilization/1417862446015977850",
+      "type": "INFO"
+    },
+    "resource": {
+      "type": "networking.googleapis.com/Location",
+      "labels": {
+        "location": "global",
+        "project_id": "drewlp1660"
+      }
+    },
+    "timestamp": "2024-11-03T10:37:41.193748204Z",
+    "logName": "projects/drewlp1660/logs/networkanalyzer.googleapis.com%2Fanalyzer_reports",
+    "receiveTimestamp": "2024-11-03T10:37:42.087266925Z"
+  },
+  {
+    "insertId": "18oq5gjf3diojf",
+    "jsonPayload": {
+      "omitempty": null,
+      "localTimestamp": "2024-11-03T17:27:23.0006Z",
+      "message": "Scheduler - wake: [now 2024-11-03 17:27:23.000528279 +0000 UTC]"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "zone": "us-central1-c",
+        "project_id": "drewlp1660",
+        "instance_id": "414375484283897998"
+      }
+    },
+    "timestamp": "2024-11-03T17:27:23.000683023Z",
+    "severity": "INFO",
+    "labels": {
+      "instance_name": "p1vm"
+    },
+    "logName": "projects/drewlp1660/logs/GCEGuestAgent",
+    "sourceLocation": {
+      "file": "logger.go",
+      "line": "24",
+      "function": "github.com/GoogleCloudPlatform/guest-agent/google_guest_agent/scheduler.(*cronLogger).Info"
+    },
+    "receiveTimestamp": "2024-11-03T17:27:23.250218267Z"
+  },
+  {
+    "insertId": "18oq5gjf3diojg",
+    "jsonPayload": {
+      "localTimestamp": "2024-11-03T17:27:23.0007Z",
+      "message": "Scheduler - run: [now 2024-11-03 17:27:23.000528279 +0000 UTC entry 1 next 2024-11-04 17:27:23 +0000 UTC]",
+      "omitempty": null
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "zone": "us-central1-c",
+        "instance_id": "414375484283897998",
+        "project_id": "drewlp1660"
+      }
+    },
+    "timestamp": "2024-11-03T17:27:23.000797264Z",
+    "severity": "INFO",
+    "labels": {
+      "instance_name": "p1vm"
+    },
+    "logName": "projects/drewlp1660/logs/GCEGuestAgent",
+    "sourceLocation": {
+      "file": "logger.go",
+      "line": "24",
+      "function": "github.com/GoogleCloudPlatform/guest-agent/google_guest_agent/scheduler.(*cronLogger).Info"
+    },
+    "receiveTimestamp": "2024-11-03T17:27:23.250218267Z"
+  },
+  {
+    "insertId": "18oq5gjf3diojh",
+    "jsonPayload": {
+      "omitempty": null,
+      "message": "Invoking job \"telemetryJobID\"",
+      "localTimestamp": "2024-11-03T17:27:23.0008Z"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "instance_id": "414375484283897998",
+        "project_id": "drewlp1660",
+        "zone": "us-central1-c"
+      }
+    },
+    "timestamp": "2024-11-03T17:27:23.000838299Z",
+    "severity": "INFO",
+    "labels": {
+      "instance_name": "p1vm"
+    },
+    "logName": "projects/drewlp1660/logs/GCEGuestAgent",
+    "sourceLocation": {
+      "file": "scheduler.go",
+      "line": "72",
+      "function": "github.com/GoogleCloudPlatform/guest-agent/google_guest_agent/scheduler.(*Scheduler).ScheduleJob.(*Scheduler).getFunc.func1"
+    },
+    "receiveTimestamp": "2024-11-03T17:27:23.250218267Z"
+  },
+  {
+    "insertId": "1r0274ze1bdkl",
+    "jsonPayload": {
+      "id": "drewlp1660/ip_utilization/1417862446015977850",
+      "reportGroups": [
+        "VPC_NETWORK"
+      ],
+      "type": "INFO",
+      "resourceName": "//compute.googleapis.com/projects/drewlp1660",
+      "status": "ACTIVE",
+      "@type": "type.googleapis.com/google.cloud.networkanalyzer.logging.v1.Report",
+      "location": "global",
+      "priority": "LOW",
+      "causeCode": "IP_UTILIZATION_IP_ALLOCATION_SUMMARY",
+      "ipUtilizationInfo": {
+        "subnetIpUtilization": [
+          {
+            "allocationRatio": 0.00024437927663734115,
+            "subnetUri": "//compute.googleapis.com/projects/drewlp1660/regions/us-central1/subnetworks/default"
+          }
+        ]
+      },
+      "firstReportTime": "2024-09-25T10:37:41.338201837Z"
+    },
+    "resource": {
+      "type": "networking.googleapis.com/Location",
+      "labels": {
+        "project_id": "drewlp1660",
+        "location": "global"
+      }
+    },
+    "timestamp": "2024-11-04T10:37:41.190916105Z",
+    "logName": "projects/drewlp1660/logs/networkanalyzer.googleapis.com%2Fanalyzer_reports",
+    "receiveTimestamp": "2024-11-04T10:37:42.560657882Z"
+  },
+  {
+    "insertId": "12kpcc7f53p0e0",
+    "jsonPayload": {
+      "message": "Scheduler - wake: [now 2024-11-04 17:27:23.000413984 +0000 UTC]",
+      "localTimestamp": "2024-11-04T17:27:23.0007Z",
+      "omitempty": null
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "project_id": "drewlp1660",
+        "instance_id": "414375484283897998",
+        "zone": "us-central1-c"
+      }
+    },
+    "timestamp": "2024-11-04T17:27:23.002028911Z",
+    "severity": "INFO",
+    "labels": {
+      "instance_name": "p1vm"
+    },
+    "logName": "projects/drewlp1660/logs/GCEGuestAgent",
+    "sourceLocation": {
+      "file": "logger.go",
+      "line": "24",
+      "function": "github.com/GoogleCloudPlatform/guest-agent/google_guest_agent/scheduler.(*cronLogger).Info"
+    },
+    "receiveTimestamp": "2024-11-04T17:27:24.036996887Z"
+  },
+  {
+    "insertId": "12kpcc7f53p0e1",
+    "jsonPayload": {
+      "message": "Scheduler - run: [now 2024-11-04 17:27:23.000413984 +0000 UTC entry 1 next 2024-11-05 17:27:23 +0000 UTC]",
+      "localTimestamp": "2024-11-04T17:27:23.0022Z",
+      "omitempty": null
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "project_id": "drewlp1660",
+        "zone": "us-central1-c",
+        "instance_id": "414375484283897998"
+      }
+    },
+    "timestamp": "2024-11-04T17:27:23.002482425Z",
+    "severity": "INFO",
+    "labels": {
+      "instance_name": "p1vm"
+    },
+    "logName": "projects/drewlp1660/logs/GCEGuestAgent",
+    "sourceLocation": {
+      "file": "logger.go",
+      "line": "24",
+      "function": "github.com/GoogleCloudPlatform/guest-agent/google_guest_agent/scheduler.(*cronLogger).Info"
+    },
+    "receiveTimestamp": "2024-11-04T17:27:24.036996887Z"
+  },
+  {
+    "insertId": "12kpcc7f53p0e2",
+    "jsonPayload": {
+      "localTimestamp": "2024-11-04T17:27:23.0025Z",
+      "message": "Invoking job \"telemetryJobID\"",
+      "omitempty": null
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "project_id": "drewlp1660",
+        "zone": "us-central1-c",
+        "instance_id": "414375484283897998"
+      }
+    },
+    "timestamp": "2024-11-04T17:27:23.002709954Z",
+    "severity": "INFO",
+    "labels": {
+      "instance_name": "p1vm"
+    },
+    "logName": "projects/drewlp1660/logs/GCEGuestAgent",
+    "sourceLocation": {
+      "file": "scheduler.go",
+      "line": "72",
+      "function": "github.com/GoogleCloudPlatform/guest-agent/google_guest_agent/scheduler.(*Scheduler).ScheduleJob.(*Scheduler).getFunc.func1"
+    },
+    "receiveTimestamp": "2024-11-04T17:27:24.036996887Z"
+  },
+  {
+    "insertId": "17aqzb5e28f6q",
+    "jsonPayload": {
+      "resourceName": "//compute.googleapis.com/projects/drewlp1660",
+      "@type": "type.googleapis.com/google.cloud.networkanalyzer.logging.v1.Report",
+      "location": "global",
+      "reportGroups": [
+        "VPC_NETWORK"
+      ],
+      "firstReportTime": "2024-09-25T10:37:41.338201837Z",
+      "id": "drewlp1660/ip_utilization/1417862446015977850",
+      "ipUtilizationInfo": {
+        "subnetIpUtilization": [
+          {
+            "allocationRatio": 0.00024437927663734115,
+            "subnetUri": "//compute.googleapis.com/projects/drewlp1660/regions/us-central1/subnetworks/default"
+          }
+        ]
+      },
+      "status": "ACTIVE",
+      "priority": "LOW",
+      "type": "INFO",
+      "causeCode": "IP_UTILIZATION_IP_ALLOCATION_SUMMARY"
+    },
+    "resource": {
+      "type": "networking.googleapis.com/Location",
+      "labels": {
+        "project_id": "drewlp1660",
+        "location": "global"
+      }
+    },
+    "timestamp": "2024-11-05T10:37:41.379387596Z",
+    "logName": "projects/drewlp1660/logs/networkanalyzer.googleapis.com%2Fanalyzer_reports",
+    "receiveTimestamp": "2024-11-05T10:37:42.799297584Z"
+  },
+  {
+    "insertId": "3wcbqlf74a53d",
+    "jsonPayload": {
+      "message": "Scheduler - wake: [now 2024-11-05 17:27:23.002218233 +0000 UTC]",
+      "omitempty": null,
+      "localTimestamp": "2024-11-05T17:27:23.0023Z"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "zone": "us-central1-c",
+        "instance_id": "414375484283897998",
+        "project_id": "drewlp1660"
+      }
+    },
+    "timestamp": "2024-11-05T17:27:23.003469113Z",
+    "severity": "INFO",
+    "labels": {
+      "instance_name": "p1vm"
+    },
+    "logName": "projects/drewlp1660/logs/GCEGuestAgent",
+    "sourceLocation": {
+      "file": "logger.go",
+      "line": "24",
+      "function": "github.com/GoogleCloudPlatform/guest-agent/google_guest_agent/scheduler.(*cronLogger).Info"
+    },
+    "receiveTimestamp": "2024-11-05T17:27:24.030235223Z"
+  },
+  {
+    "insertId": "3wcbqlf74a53e",
+    "jsonPayload": {
+      "omitempty": null,
+      "localTimestamp": "2024-11-05T17:27:23.0036Z",
+      "message": "Scheduler - run: [now 2024-11-05 17:27:23.002218233 +0000 UTC entry 1 next 2024-11-06 17:27:23 +0000 UTC]"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "project_id": "drewlp1660",
+        "instance_id": "414375484283897998",
+        "zone": "us-central1-c"
+      }
+    },
+    "timestamp": "2024-11-05T17:27:23.003826235Z",
+    "severity": "INFO",
+    "labels": {
+      "instance_name": "p1vm"
+    },
+    "logName": "projects/drewlp1660/logs/GCEGuestAgent",
+    "sourceLocation": {
+      "file": "logger.go",
+      "line": "24",
+      "function": "github.com/GoogleCloudPlatform/guest-agent/google_guest_agent/scheduler.(*cronLogger).Info"
+    },
+    "receiveTimestamp": "2024-11-05T17:27:24.030235223Z"
+  },
+  {
+    "insertId": "3wcbqlf74a53f",
+    "jsonPayload": {
+      "localTimestamp": "2024-11-05T17:27:23.0038Z",
+      "omitempty": null,
+      "message": "Invoking job \"telemetryJobID\""
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "instance_id": "414375484283897998",
+        "zone": "us-central1-c",
+        "project_id": "drewlp1660"
+      }
+    },
+    "timestamp": "2024-11-05T17:27:23.004047022Z",
+    "severity": "INFO",
+    "labels": {
+      "instance_name": "p1vm"
+    },
+    "logName": "projects/drewlp1660/logs/GCEGuestAgent",
+    "sourceLocation": {
+      "file": "scheduler.go",
+      "line": "72",
+      "function": "github.com/GoogleCloudPlatform/guest-agent/google_guest_agent/scheduler.(*Scheduler).ScheduleJob.(*Scheduler).getFunc.func1"
+    },
+    "receiveTimestamp": "2024-11-05T17:27:24.030235223Z"
+  },
+  {
+    "insertId": "1ig3dnfe3mbnp",
+    "jsonPayload": {
+      "location": "global",
+      "id": "drewlp1660/ip_utilization/1417862446015977850",
+      "resourceName": "//compute.googleapis.com/projects/drewlp1660",
+      "ipUtilizationInfo": {
+        "subnetIpUtilization": [
+          {
+            "allocationRatio": 0.00024437927663734115,
+            "subnetUri": "//compute.googleapis.com/projects/drewlp1660/regions/us-central1/subnetworks/default"
+          }
+        ]
+      },
+      "firstReportTime": "2024-09-25T10:37:41.338201837Z",
+      "reportGroups": [
+        "VPC_NETWORK"
+      ],
+      "priority": "LOW",
+      "type": "INFO",
+      "@type": "type.googleapis.com/google.cloud.networkanalyzer.logging.v1.Report",
+      "status": "ACTIVE",
+      "causeCode": "IP_UTILIZATION_IP_ALLOCATION_SUMMARY"
+    },
+    "resource": {
+      "type": "networking.googleapis.com/Location",
+      "labels": {
+        "project_id": "drewlp1660",
+        "location": "global"
+      }
+    },
+    "timestamp": "2024-11-06T10:37:41.397718012Z",
+    "logName": "projects/drewlp1660/logs/networkanalyzer.googleapis.com%2Fanalyzer_reports",
+    "receiveTimestamp": "2024-11-06T10:37:43.054705929Z"
+  },
+  {
+    "insertId": "1w145gzf90uw9y",
+    "jsonPayload": {
+      "message": "Scheduler - wake: [now 2024-11-06 17:27:23.001783138 +0000 UTC]",
+      "omitempty": null,
+      "localTimestamp": "2024-11-06T17:27:23.0018Z"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "instance_id": "414375484283897998",
+        "zone": "us-central1-c",
+        "project_id": "drewlp1660"
+      }
+    },
+    "timestamp": "2024-11-06T17:27:23.001949460Z",
+    "severity": "INFO",
+    "labels": {
+      "instance_name": "p1vm"
+    },
+    "logName": "projects/drewlp1660/logs/GCEGuestAgent",
+    "sourceLocation": {
+      "file": "logger.go",
+      "line": "24",
+      "function": "github.com/GoogleCloudPlatform/guest-agent/google_guest_agent/scheduler.(*cronLogger).Info"
+    },
+    "receiveTimestamp": "2024-11-06T17:27:24.037472949Z"
+  },
+  {
+    "insertId": "1w145gzf90uw9z",
+    "jsonPayload": {
+      "omitempty": null,
+      "message": "Scheduler - run: [now 2024-11-06 17:27:23.001783138 +0000 UTC entry 1 next 2024-11-07 17:27:23 +0000 UTC]",
+      "localTimestamp": "2024-11-06T17:27:23.0020Z"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "instance_id": "414375484283897998",
+        "project_id": "drewlp1660",
+        "zone": "us-central1-c"
+      }
+    },
+    "timestamp": "2024-11-06T17:27:23.002059126Z",
+    "severity": "INFO",
+    "labels": {
+      "instance_name": "p1vm"
+    },
+    "logName": "projects/drewlp1660/logs/GCEGuestAgent",
+    "sourceLocation": {
+      "file": "logger.go",
+      "line": "24",
+      "function": "github.com/GoogleCloudPlatform/guest-agent/google_guest_agent/scheduler.(*cronLogger).Info"
+    },
+    "receiveTimestamp": "2024-11-06T17:27:24.037472949Z"
+  },
+  {
+    "insertId": "1w145gzf90uwa0",
+    "jsonPayload": {
+      "omitempty": null,
+      "message": "Invoking job \"telemetryJobID\"",
+      "localTimestamp": "2024-11-06T17:27:23.0020Z"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "zone": "us-central1-c",
+        "instance_id": "414375484283897998",
+        "project_id": "drewlp1660"
+      }
+    },
+    "timestamp": "2024-11-06T17:27:23.002097730Z",
+    "severity": "INFO",
+    "labels": {
+      "instance_name": "p1vm"
+    },
+    "logName": "projects/drewlp1660/logs/GCEGuestAgent",
+    "sourceLocation": {
+      "file": "scheduler.go",
+      "line": "72",
+      "function": "github.com/GoogleCloudPlatform/guest-agent/google_guest_agent/scheduler.(*Scheduler).ScheduleJob.(*Scheduler).getFunc.func1"
+    },
+    "receiveTimestamp": "2024-11-06T17:27:24.037472949Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "The parent resource is invalid."
+      },
+      "authenticationInfo": {
+        "principalEmail": "DrewLP1223@gmail.com",
+        "principalSubject": "user:DrewLP1223@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.231.80.105",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.iam.workload-identity-pools.create invocation-id/b0c442ec224f4fe6bdef75f433ca8eac environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-06T22:40:49.546003564Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool",
+      "authorizationInfo": [
+        {
+          "resource": "projects/drewlp1660/locations/us-east5",
+          "permission": "iam.workloadIdentityPools.create",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/drewlp1660/locations/us-east5",
+      "request": {
+        "workloadIdentityPool": {
+          "displayName": "GitHub Actions Pool",
+          "disabled": false
+        },
+        "parent": "projects/drewlp1660/locations/us-east5",
+        "workloadIdentityPoolId": "github",
+        "@type": "type.googleapis.com/google.iam.v1.CreateWorkloadIdentityPoolRequest"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "us-east5"
+        ]
+      }
+    },
+    "insertId": "tq21g8czjk",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "iam.googleapis.com",
+        "method": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool",
+        "project_id": "drewlp1660"
+      }
+    },
+    "timestamp": "2024-11-06T22:40:49.538255854Z",
+    "severity": "ERROR",
+    "logName": "projects/drewlp1660/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-06T22:40:49.881591876Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "The parent resource is invalid."
+      },
+      "authenticationInfo": {
+        "principalEmail": "DrewLP1223@gmail.com",
+        "principalSubject": "user:DrewLP1223@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.231.80.105",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.iam.workload-identity-pools.create invocation-id/637bb073ef414ee18e21c3aba7648f08 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-06T22:41:23.871388578Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool",
+      "authorizationInfo": [
+        {
+          "resource": "projects/drewlp1660/locations/us-east5",
+          "permission": "iam.workloadIdentityPools.create",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/drewlp1660/locations/us-east5",
+      "request": {
+        "workloadIdentityPoolId": "github",
+        "@type": "type.googleapis.com/google.iam.v1.CreateWorkloadIdentityPoolRequest",
+        "workloadIdentityPool": {
+          "displayName": "GitHub Actions Pool",
+          "disabled": false
+        },
+        "parent": "projects/drewlp1660/locations/us-east5"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "us-east5"
+        ]
+      }
+    },
+    "insertId": "1xxciare10lj1",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "drewlp1660",
+        "service": "iam.googleapis.com",
+        "method": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool"
+      }
+    },
+    "timestamp": "2024-11-06T22:41:23.862644948Z",
+    "severity": "ERROR",
+    "logName": "projects/drewlp1660/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-06T22:41:23.898127271Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 6,
+        "message": "Requested entity already exists"
+      },
+      "authenticationInfo": {
+        "principalEmail": "DrewLP1223@gmail.com",
+        "principalSubject": "user:DrewLP1223@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.231.80.105",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.iam.workload-identity-pools.create invocation-id/6391c541c40e4872817ffdced9634f3b environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-06T22:41:36.137043170Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool",
+      "authorizationInfo": [
+        {
+          "resource": "projects/drewlp1660/locations/global",
+          "permission": "iam.workloadIdentityPools.create",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/drewlp1660/locations/global",
+      "request": {
+        "workloadIdentityPool": {
+          "disabled": false,
+          "displayName": "GitHub Actions Pool"
+        },
+        "parent": "projects/drewlp1660/locations/global",
+        "workloadIdentityPoolId": "github",
+        "@type": "type.googleapis.com/google.iam.v1.CreateWorkloadIdentityPoolRequest"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "global"
+        ]
+      }
+    },
+    "insertId": "6xs7wvdzp5s",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "drewlp1660",
+        "method": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool",
+        "service": "iam.googleapis.com"
+      }
+    },
+    "timestamp": "2024-11-06T22:41:36.130464820Z",
+    "severity": "ERROR",
+    "logName": "projects/drewlp1660/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-06T22:41:36.396600324Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "The parent resource is invalid."
+      },
+      "authenticationInfo": {
+        "principalEmail": "DrewLP1223@gmail.com",
+        "principalSubject": "user:DrewLP1223@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.231.80.105",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.iam.workload-identity-pools.create invocation-id/535f1d226abf426cbfe2bae4f6f4483e environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-06T22:42:11.947515440Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool",
+      "authorizationInfo": [
+        {
+          "resource": "projects/drewlp1660/locations/us-east5",
+          "permission": "iam.workloadIdentityPools.create",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/drewlp1660/locations/us-east5",
+      "request": {
+        "parent": "projects/drewlp1660/locations/us-east5",
+        "@type": "type.googleapis.com/google.iam.v1.CreateWorkloadIdentityPoolRequest",
+        "workloadIdentityPool": {
+          "disabled": false,
+          "displayName": "GitHub Actions Pool"
+        },
+        "workloadIdentityPoolId": "github"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "us-east5"
+        ]
+      }
+    },
+    "insertId": "1jt1t61dzo18",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool",
+        "project_id": "drewlp1660",
+        "service": "iam.googleapis.com"
+      }
+    },
+    "timestamp": "2024-11-06T22:42:11.937943872Z",
+    "severity": "ERROR",
+    "logName": "projects/drewlp1660/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-06T22:42:12.343748745Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "The parent resource is invalid."
+      },
+      "authenticationInfo": {
+        "principalEmail": "DrewLP1223@gmail.com",
+        "principalSubject": "user:DrewLP1223@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.231.80.105",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.iam.workload-identity-pools.create invocation-id/2c560edfb81d4dd99d1796524aae7735 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-06T22:42:19.791643364Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool",
+      "authorizationInfo": [
+        {
+          "resource": "projects/drewlp1660/locations/us-east1",
+          "permission": "iam.workloadIdentityPools.create",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/drewlp1660/locations/us-east1",
+      "request": {
+        "parent": "projects/drewlp1660/locations/us-east1",
+        "workloadIdentityPoolId": "github",
+        "workloadIdentityPool": {
+          "displayName": "GitHub Actions Pool",
+          "disabled": false
+        },
+        "@type": "type.googleapis.com/google.iam.v1.CreateWorkloadIdentityPoolRequest"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "us-east1"
+        ]
+      }
+    },
+    "insertId": "1jt1t61dzo1m",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool",
+        "service": "iam.googleapis.com",
+        "project_id": "drewlp1660"
+      }
+    },
+    "timestamp": "2024-11-06T22:42:19.782034685Z",
+    "severity": "ERROR",
+    "logName": "projects/drewlp1660/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-06T22:42:20.342749858Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "The parent resource is invalid."
+      },
+      "authenticationInfo": {
+        "principalEmail": "DrewLP1223@gmail.com",
+        "principalSubject": "user:DrewLP1223@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.231.80.105",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.iam.workload-identity-pools.create invocation-id/e072e8340f504c6b9ce2b82fd1f0fc6c environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-06T22:43:38.302296983Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool",
+      "authorizationInfo": [
+        {
+          "resource": "projects/drewlp1660/locations/us-east5",
+          "permission": "iam.workloadIdentityPools.create",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/drewlp1660/locations/us-east5",
+      "request": {
+        "workloadIdentityPoolId": "github2",
+        "parent": "projects/drewlp1660/locations/us-east5",
+        "workloadIdentityPool": {
+          "displayName": "GitHub Actions Pool",
+          "disabled": false
+        },
+        "@type": "type.googleapis.com/google.iam.v1.CreateWorkloadIdentityPoolRequest"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "us-east5"
+        ]
+      }
+    },
+    "insertId": "6xs7wvdzpbl",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "drewlp1660",
+        "service": "iam.googleapis.com",
+        "method": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool"
+      }
+    },
+    "timestamp": "2024-11-06T22:43:38.293217295Z",
+    "severity": "ERROR",
+    "logName": "projects/drewlp1660/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-06T22:43:38.407280118Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "The parent resource is invalid."
+      },
+      "authenticationInfo": {
+        "principalEmail": "DrewLP1223@gmail.com",
+        "principalSubject": "user:DrewLP1223@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.231.80.105",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.iam.workload-identity-pools.create invocation-id/84b0e24b2da64c089fc7c51be8e71929 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-06T22:44:07.715525949Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool",
+      "authorizationInfo": [
+        {
+          "resource": "projects/drewlp1660/locations/us-east5",
+          "permission": "iam.workloadIdentityPools.create",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/drewlp1660/locations/us-east5",
+      "request": {
+        "parent": "projects/drewlp1660/locations/us-east5",
+        "workloadIdentityPoolId": "github2",
+        "workloadIdentityPool": {
+          "displayName": "GitHub Actions Pool",
+          "disabled": false
+        },
+        "@type": "type.googleapis.com/google.iam.v1.CreateWorkloadIdentityPoolRequest"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "us-east5"
+        ]
+      }
+    },
+    "insertId": "17clz00dxztf",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "drewlp1660",
+        "service": "iam.googleapis.com",
+        "method": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool"
+      }
+    },
+    "timestamp": "2024-11-06T22:44:07.706521466Z",
+    "severity": "ERROR",
+    "logName": "projects/drewlp1660/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-06T22:44:08.716583826Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "The parent resource is invalid."
+      },
+      "authenticationInfo": {
+        "principalEmail": "DrewLP1223@gmail.com",
+        "principalSubject": "user:DrewLP1223@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "35.231.80.105",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.iam.workload-identity-pools.create invocation-id/dee07eaa86aa461a943a588d7590c3d3 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-06T22:44:28.367721110Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool",
+      "authorizationInfo": [
+        {
+          "resource": "projects/drewlp1660/locations/us-east5",
+          "permission": "iam.workloadIdentityPools.create",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/drewlp1660/locations/us-east5",
+      "request": {
+        "workloadIdentityPool": {
+          "displayName": "GitHub Actions Pool 2",
+          "disabled": false
+        },
+        "parent": "projects/drewlp1660/locations/us-east5",
+        "workloadIdentityPoolId": "github2",
+        "@type": "type.googleapis.com/google.iam.v1.CreateWorkloadIdentityPoolRequest"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "us-east5"
+        ]
+      }
+    },
+    "insertId": "1y90j3pe10axd",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "drewlp1660",
+        "method": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool",
+        "service": "iam.googleapis.com"
+      }
+    },
+    "timestamp": "2024-11-06T22:44:28.358945530Z",
+    "severity": "ERROR",
+    "logName": "projects/drewlp1660/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-06T22:44:28.377333093Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "DrewLP1223@gmail.com",
+        "principalSubject": "user:DrewLP1223@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "136.142.159.89",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:131.0) Gecko/20100101 Firefox/131.0,gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-06T23:25:27.944513849Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.UpdateWorkloadIdentityPool",
+      "authorizationInfo": [
+        {
+          "resource": "projects/drewlp1660/locations/global/workloadIdentityPools/github",
+          "permission": "iam.workloadIdentityPools.update",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/drewlp1660/locations/global/workloadIdentityPools/github",
+      "request": {
+        "@type": "type.googleapis.com/google.iam.v1.UpdateWorkloadIdentityPoolRequest",
+        "updateMask": "displayName",
+        "workloadIdentityPool": {
+          "displayName": "GitHub Actions Pool",
+          "name": "projects/drewlp1660/locations/global/workloadIdentityPools/github"
+        }
+      }
+    },
+    "insertId": "aap3ede22b8s",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "iam.googleapis.com",
+        "project_id": "drewlp1660",
+        "method": "google.iam.v1.WorkloadIdentityPools.UpdateWorkloadIdentityPool"
+      }
+    },
+    "timestamp": "2024-11-06T23:25:27.927970848Z",
+    "severity": "NOTICE",
+    "logName": "projects/drewlp1660/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "projects/542292153372/locations/global/workloadIdentityPools/github/operations/bigar2hvv64qmehy5xuycai000000000",
+      "producer": "iam.googleapis.com",
+      "first": true
+    },
+    "receiveTimestamp": "2024-11-06T23:25:28.780779696Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "DrewLP1223@gmail.com",
+        "principalSubject": "user:DrewLP1223@gmail.com"
+      },
+      "requestMetadata": {
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.UpdateWorkloadIdentityPool",
+      "resourceName": "projects/drewlp1660/locations/global/workloadIdentityPools/github",
+      "response": {
+        "@type": "type.googleapis.com/google.longrunning.Operation",
+        "name": "projects/542292153372/locations/global/workloadIdentityPools/github/operations/bigar2hvv64qmehy5xuycai000000000"
+      }
+    },
+    "insertId": "2a44utcc8x",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "iam.googleapis.com",
+        "project_id": "drewlp1660",
+        "method": "google.iam.v1.WorkloadIdentityPools.UpdateWorkloadIdentityPool"
+      }
+    },
+    "timestamp": "2024-11-06T23:25:28.273282Z",
+    "severity": "NOTICE",
+    "logName": "projects/drewlp1660/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "projects/542292153372/locations/global/workloadIdentityPools/github/operations/bigar2hvv64qmehy5xuycai000000000",
+      "producer": "iam.googleapis.com",
+      "last": true
+    },
+    "receiveTimestamp": "2024-11-06T23:25:29.173043878Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Invalid principalSet member (principalSet://iam.googleapis.com/projects/542292153372/locations/global/workloadIdentityPools/github/providers/my-repo/attribute.repository/pitt-cs-1660/build-and-push-image-drewlp22)."
+      },
+      "authenticationInfo": {
+        "principalEmail": "DrewLP1223@gmail.com",
+        "principalSubject": "user:DrewLP1223@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "34.75.30.48",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.artifacts.repositories.add-iam-policy-binding invocation-id/1e58e1f59087455cae11c795f855f902 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-06T23:28:46.948947661Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "projects/drewlp1660/locations/us-east5/repositories/dlp1660a3",
+          "permission": "artifactregistry.repositories.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/drewlp1660/locations/us-east5/repositories/dlp1660a3",
+      "request": {
+        "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest",
+        "resource": "projects/drewlp1660/locations/us-east5/repositories/dlp1660a3"
+      }
+    },
+    "insertId": "bpkpo1d188b",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "drewlp1660",
+        "service": "artifactregistry.googleapis.com",
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy"
+      }
+    },
+    "timestamp": "2024-11-06T23:28:46.941421671Z",
+    "severity": "ERROR",
+    "logName": "projects/drewlp1660/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-06T23:28:47.836225296Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "The member principalSet://iam.googleapis.com/projects/542292153372/my-repo/attribute.repository/pitt-cs-1660/build-and-push-image-drewlp22 is of an unknown type. Please set a valid type prefix for the member."
+      },
+      "authenticationInfo": {
+        "principalEmail": "DrewLP1223@gmail.com",
+        "principalSubject": "user:DrewLP1223@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "34.75.30.48",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.artifacts.repositories.add-iam-policy-binding invocation-id/907334d922df41e791b12933448f6fdc environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-06T23:30:49.761667562Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "projects/drewlp1660/locations/us-east5/repositories/dlp1660a3",
+          "permission": "artifactregistry.repositories.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/drewlp1660/locations/us-east5/repositories/dlp1660a3",
+      "request": {
+        "resource": "projects/drewlp1660/locations/us-east5/repositories/dlp1660a3",
+        "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest"
+      }
+    },
+    "insertId": "1uwd9q3d18ar",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "artifactregistry.googleapis.com",
+        "project_id": "drewlp1660",
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy"
+      }
+    },
+    "timestamp": "2024-11-06T23:30:49.753514243Z",
+    "severity": "ERROR",
+    "logName": "projects/drewlp1660/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-06T23:30:50.688748227Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "The member principalSet://iam.googleapis.com/projects/542292153372/attribute.repository/pitt-cs-1660/build-and-push-image-drewlp22 is of an unknown type. Please set a valid type prefix for the member."
+      },
+      "authenticationInfo": {
+        "principalEmail": "DrewLP1223@gmail.com",
+        "principalSubject": "user:DrewLP1223@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "34.75.30.48",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.artifacts.repositories.add-iam-policy-binding invocation-id/5b407fee9ccb4b0e966064d7feb360a1 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-06T23:31:05.465373319Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "projects/drewlp1660/locations/us-east5/repositories/dlp1660a3",
+          "permission": "artifactregistry.repositories.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/drewlp1660/locations/us-east5/repositories/dlp1660a3",
+      "request": {
+        "resource": "projects/drewlp1660/locations/us-east5/repositories/dlp1660a3",
+        "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest"
+      }
+    },
+    "insertId": "gyvkayd19qn",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+        "project_id": "drewlp1660",
+        "service": "artifactregistry.googleapis.com"
+      }
+    },
+    "timestamp": "2024-11-06T23:31:05.457378859Z",
+    "severity": "ERROR",
+    "logName": "projects/drewlp1660/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-06T23:31:06.229928123Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Invalid principalSet member (principalSet://iam.googleapis.com/projects/542292153372/locations/global/workloadIdentityPools/github/subject/pitt-cs-1660/build-and-push-image-drewlp22)."
+      },
+      "authenticationInfo": {
+        "principalEmail": "DrewLP1223@gmail.com",
+        "principalSubject": "user:DrewLP1223@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "34.75.30.48",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.artifacts.repositories.add-iam-policy-binding invocation-id/12740a112389417f895ed01b75ef2270 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-06T23:32:44.067171989Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "projects/drewlp1660/locations/us-east5/repositories/dlp1660a3",
+          "permission": "artifactregistry.repositories.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/drewlp1660/locations/us-east5/repositories/dlp1660a3",
+      "request": {
+        "resource": "projects/drewlp1660/locations/us-east5/repositories/dlp1660a3",
+        "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest"
+      }
+    },
+    "insertId": "1uw54urd1944",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+        "project_id": "drewlp1660",
+        "service": "artifactregistry.googleapis.com"
+      }
+    },
+    "timestamp": "2024-11-06T23:32:44.058349449Z",
+    "severity": "ERROR",
+    "logName": "projects/drewlp1660/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-06T23:32:44.327648431Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Invalid principalSet member (principalSet://iam.googleapis.com/projects/542292153372/locations/global/workloadIdentityPools/github/subject/attribute.repository/pitt-cs-1660/build-and-push-image-drewlp22)."
+      },
+      "authenticationInfo": {
+        "principalEmail": "DrewLP1223@gmail.com",
+        "principalSubject": "user:DrewLP1223@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "34.75.30.48",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.artifacts.repositories.add-iam-policy-binding invocation-id/c2f34da44e5e47a0aba7fb08a62312e5 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-06T23:33:30.760399450Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "projects/drewlp1660/locations/us-east5/repositories/dlp1660a3",
+          "permission": "artifactregistry.repositories.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/drewlp1660/locations/us-east5/repositories/dlp1660a3",
+      "request": {
+        "resource": "projects/drewlp1660/locations/us-east5/repositories/dlp1660a3",
+        "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest"
+      }
+    },
+    "insertId": "154ot9rd19c3",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+        "service": "artifactregistry.googleapis.com",
+        "project_id": "drewlp1660"
+      }
+    },
+    "timestamp": "2024-11-06T23:33:30.752106722Z",
+    "severity": "ERROR",
+    "logName": "projects/drewlp1660/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-06T23:33:30.836197354Z"
+  }
+]
